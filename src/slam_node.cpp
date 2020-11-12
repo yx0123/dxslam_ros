@@ -120,7 +120,7 @@ SLAMNode::SLAMNode() : image_sync_(sync_policy(10))
     pnh.param("pub_tf_child_frame", p_child_frame_, std::string(""));
     pnh.param("reference_frame", p_ref_frame_, std::string("vslam_origin"));
 
-    pnh.param("vocabulary", p_vocabulary_, std::string(DXSLAM_PATH) + "/Vocabulary/super.fbow");
+    pnh.param("vocabulary", p_vocabulary_, std::string(DXSLAM_PATH) + "Vocabulary/DXSLAM.fbow");
     pnh.param("config", p_config_, std::string(CONFIG_PATH) + "/openloris.yaml");
 }
 
